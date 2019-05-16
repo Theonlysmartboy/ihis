@@ -1,6 +1,6 @@
-# Project Title
+# IHIS
 
-One Paragraph of project description goes here
+Integrated Hospital Information management System
 
 ## Getting Started
 
