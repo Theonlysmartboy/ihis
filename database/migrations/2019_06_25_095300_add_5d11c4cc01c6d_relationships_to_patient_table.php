@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class Add5d11c4cc01c6dRelationshipsToPatientTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('patients', function(Blueprint $table) {
+            if (!Schema::hasColumn('patients', 'zone_id')) {
+                $table->integer('zone_id')->unsigned()->nullable();
+                $table->foreign('zone_id', '318297_5d11c4246e6c2')->references('id')->on('contact_companies')->onDelete('cascade');
+                }
+                if (!Schema::hasColumn('patients', 'hospital_id')) {
+                $table->integer('hospital_id')->unsigned()->nullable();
+                $table->foreign('hospital_id', '318297_5d11c4c79c89f')->references('id')->on('contacts')->onDelete('cascade');
+                }
+                
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('patients', function(Blueprint $table) {
+            
+        });
+    }
+}
