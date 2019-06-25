@@ -21,10 +21,6 @@
                             <td field-key='first_name'>{{ $contact->first_name }}</td>
                         </tr>
                         <tr>
-                            <th>@lang('quickadmin.contacts.fields.last-name')</th>
-                            <td field-key='last_name'>{{ $contact->last_name }}</td>
-                        </tr>
-                        <tr>
                             <th>@lang('quickadmin.contacts.fields.phone1')</th>
                             <td field-key='phone1'>{{ $contact->phone1 }}</td>
                         </tr>
@@ -47,6 +43,10 @@
                         <tr>
                             <th>@lang('quickadmin.contacts.fields.hospital-id')</th>
                             <td field-key='hospital_id'>{{ $contact->hospital_id }}</td>
+                        </tr>
+                        <tr>
+                            <th>@lang('quickadmin.contacts.fields.hospital-level')</th>
+                            <td field-key='hospital_level'>{{ $contact->hospital_level }}</td>
                         </tr>
                     </table>
                 </div>

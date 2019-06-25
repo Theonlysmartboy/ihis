@@ -50,13 +50,13 @@
         <tr>
             <th>@lang('quickadmin.contacts.fields.company')</th>
                         <th>@lang('quickadmin.contacts.fields.first-name')</th>
-                        <th>@lang('quickadmin.contacts.fields.last-name')</th>
                         <th>@lang('quickadmin.contacts.fields.phone1')</th>
                         <th>@lang('quickadmin.contacts.fields.phone2')</th>
                         <th>@lang('quickadmin.contacts.fields.email')</th>
                         <th>@lang('quickadmin.contacts.fields.skype')</th>
                         <th>@lang('quickadmin.contacts.fields.address')</th>
                         <th>@lang('quickadmin.contacts.fields.hospital-id')</th>
+                        <th>@lang('quickadmin.contacts.fields.hospital-level')</th>
                                                 <th>&nbsp;</th>
 
         </tr>
@@ -68,13 +68,13 @@
                 <tr data-entry-id="{{ $contact->id }}">
                     <td field-key='company'>{{ $contact->company->name ?? '' }}</td>
                                 <td field-key='first_name'>{{ $contact->first_name }}</td>
-                                <td field-key='last_name'>{{ $contact->last_name }}</td>
                                 <td field-key='phone1'>{{ $contact->phone1 }}</td>
                                 <td field-key='phone2'>{{ $contact->phone2 }}</td>
                                 <td field-key='email'>{{ $contact->email }}</td>
                                 <td field-key='skype'>{{ $contact->skype }}</td>
                                 <td field-key='address'>{{ $contact->address }}</td>
                                 <td field-key='hospital_id'>{{ $contact->hospital_id }}</td>
+                                <td field-key='hospital_level'>{{ $contact->hospital_level }}</td>
                                                                 <td>
                                     @can('contact_view')
                                     <a href="{{ route('admin.contacts.show',[$contact->id]) }}" class="btn btn-xs btn-primary">@lang('quickadmin.qa_view')</a>

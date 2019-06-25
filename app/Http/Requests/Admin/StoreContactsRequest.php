@@ -25,6 +25,7 @@ class StoreContactsRequest extends FormRequest
         return [
             'company_id' => 'required',
             'hospital_id' => 'required',
+            'hospital_level' => 'required',
         ];
     }
 }

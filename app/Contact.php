@@ -9,17 +9,17 @@ use Illuminate\Database\Eloquent\Model;
  * @package App
  * @property string $company
  * @property string $first_name
- * @property string $last_name
  * @property string $phone1
  * @property string $phone2
  * @property string $email
  * @property string $skype
  * @property string $address
  * @property string $hospital_id
+ * @property string $hospital_level
 */
 class Contact extends Model
 {
-    protected $fillable = ['first_name', 'last_name', 'phone1', 'phone2', 'email', 'skype', 'address', 'hospital_id', 'company_id'];
+    protected $fillable = ['first_name', 'phone1', 'phone2', 'email', 'skype', 'address', 'hospital_id', 'hospital_level', 'company_id'];
     protected $hidden = [];
     
     

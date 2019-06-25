@@ -52,8 +52,8 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1]);
         });
 
-        // Auth gates for: Contact management
-        Gate::define('contact_management_access', function ($user) {
+        // Auth gates for: Api management
+        Gate::define('api_management_access', function ($user) {
             return in_array($user->role_id, [1, 2]);
         });
 

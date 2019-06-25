@@ -26,6 +26,7 @@ class UpdateContactsRequest extends FormRequest
             
             'company_id' => 'required',
             'hospital_id' => 'required',
+            'hospital_level' => 'required',
         ];
     }
 }

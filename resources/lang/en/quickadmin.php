@@ -5,8 +5,8 @@ return [
 		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',		],	],
 		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
 		'api-management' => [		'title' => 'Api management',		'fields' => [		],	],
-		'contact-companies' => [		'title' => 'Zones',		'fields' => [			'name' => 'Company name',			'address' => 'Address',			'website' => 'Website',			'email' => 'Email',			'zone-id' => 'Zone id',		],	],
-		'contacts' => [		'title' => 'Hospital',		'fields' => [			'company' => 'Zone',			'first-name' => 'First name',			'last-name' => 'Last name',			'phone1' => 'Phone 1',			'phone2' => 'Phone 2',			'email' => 'Email',			'skype' => 'Skype',			'address' => 'Address',			'hospital-id' => 'Hospital id',		],	],
+		'contact-companies' => [		'title' => 'Zones',		'fields' => [			'name' => 'Zone name',			'address' => 'Address',			'website' => 'Website',			'email' => 'Email',			'zone-id' => 'Zone id',		],	],
+		'contacts' => [		'title' => 'Hospital',		'fields' => [			'company' => 'Zone',			'first-name' => 'First name',			'phone1' => 'Phone 1',			'phone2' => 'Phone 2',			'email' => 'Email',			'skype' => 'Skype',			'address' => 'Address',			'hospital-id' => 'Hospital id',			'hospital-level' => 'Hospital level',		],	],
 		'user-actions' => [		'title' => 'User actions',		'created_at' => 'Time',		'fields' => [			'user' => 'User',			'action' => 'Action',			'action-model' => 'Action model',			'action-id' => 'Action id',		],	],
 		'hospital' => [		'title' => 'Hospital',		'fields' => [		],	],
 		'zones' => [		'title' => 'Zones',		'fields' => [		],	],

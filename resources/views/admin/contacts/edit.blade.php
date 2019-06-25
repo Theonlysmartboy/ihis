@@ -37,18 +37,6 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('last_name', trans('quickadmin.contacts.fields.last-name').'', ['class' => 'control-label']) !!}
-                    {!! Form::text('last_name', old('last_name'), ['class' => 'form-control', 'placeholder' => '']) !!}
-                    <p class="help-block"></p>
-                    @if($errors->has('last_name'))
-                        <p class="help-block">
-                            {{ $errors->first('last_name') }}
-                        </p>
-                    @endif
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 form-group">
                     {!! Form::label('phone1', trans('quickadmin.contacts.fields.phone1').'', ['class' => 'control-label']) !!}
                     {!! Form::text('phone1', old('phone1'), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
@@ -115,6 +103,18 @@
                     @if($errors->has('hospital_id'))
                         <p class="help-block">
                             {{ $errors->first('hospital_id') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('hospital_level', trans('quickadmin.contacts.fields.hospital-level').'*', ['class' => 'control-label']) !!}
+                    {!! Form::text('hospital_level', old('hospital_level'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('hospital_level'))
+                        <p class="help-block">
+                            {{ $errors->first('hospital_level') }}
                         </p>
                     @endif
                 </div>
